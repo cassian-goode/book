@@ -221,7 +221,7 @@ set its current value.
 view! {
     <textarea
         prop:value=move || some_value.get()
-        on:input:target=move |ev| some_value.set(ev.target().value())
+        on:input:target=move |ev| set_some_value.set(ev.target().value())
     >
         {some_value}
     </textarea>

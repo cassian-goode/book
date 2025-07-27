@@ -104,7 +104,7 @@ let message = move || {
     match value.get() {
         0 => "Zero",
         1 => "One",
-        n if is_odd() => "Odd",
+        _n if is_odd() => "Odd",
         _ => "Even"
     }
 };

@@ -8,7 +8,7 @@ First things first, make sure you’ve added the `leptos_router` package to your
 
 > It’s important that the router is a separate package from `leptos` itself. This means that everything in the router can be defined in user-land code. If you want to create your own router, or use no router, you’re completely free to do that!
 
-And import the relevant types from the router, either with something like
+And import the relevant types from the router, with something like:
 
 ```rust
 use leptos_router::components::{Router, Route, Routes};

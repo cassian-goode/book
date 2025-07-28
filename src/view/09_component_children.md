@@ -230,7 +230,7 @@ pub fn WrapsChildren(children: ChildrenFragment) -> impl IntoView {
         .nodes
         .into_iter()
         .map(|child| view! { <li>{child}</li> })
-        .collect::<Vec<_>>();
+        .collect_view();
 
     view! {
         <h1><code>"<WrapsChildren/>"</code></h1>
